@@ -1,4 +1,4 @@
-#to -do App
+
 To-Do List App
 
 A simple and interactive to-do list application with task management features and local storage support
