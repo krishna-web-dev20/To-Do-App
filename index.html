@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>TO-DO APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+    <h1>TO-DO APP</h1>
+
+    <div class="top-bar">
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search..." oninput="renderTasks()">
+
+            <div class="filters">
+                <button onclick="setFilter('all')">All</button>
+                <button onclick="setFilter('completed')">Completed</button>
+                <button onclick="setFilter('pending')">Pending</button>
+            </div>
+            <button onclick="toggleDarkMode()">🌙</button>
+        </div>
+
+        <p id="counter"></p>
+        <ul id="taskList"></ul>
+        <p id="emptyMsg">No tasks yet</p>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

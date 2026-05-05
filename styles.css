@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.container{
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 400px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.input-group{
+    display: flex;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    background: white;
+    padding-bottom: 10px;
+}
+
+input{
+    flex: 1;
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 15px;
+    border: none;
+    background: #3495db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #2980b9;
+}
+
+ul{
+    margin-top: 20px;
+    padding: 0;
+}
+li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#tasklist{
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.dark{
+    background: #1e1e1e;
+    color: white;
+}
+
+.top-bar{
+    display: flex;
+    gap: 10px;
+}
+
+.controls{
+    margin-top: 10px;
+}
+
+.filters button{
+    margin-right: 5px;
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+#emptyMsg{
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+}
